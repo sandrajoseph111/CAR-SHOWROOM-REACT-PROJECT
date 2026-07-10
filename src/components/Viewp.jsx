@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const Viewp = () => {
     const [data, ChangeData] = useState([])
@@ -28,6 +29,7 @@ const fetchData =()=>{
 
     return (
         <div>
+            <NavigationBar />
             <div className="container">
                 <div className="row">
                     <div className="col-12">

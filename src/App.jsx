@@ -7,6 +7,7 @@ import Viewp from './components/Viewp'
 import { Addcar } from './components/Addcar'
 import Searchcar from './components/Searchcar'
 import Deletecar from './components/Deletecar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
@@ -14,10 +15,18 @@ function App() {
 
   return (
     <>
-    <Addcar/>
-    <Searchcar />
-      <Viewp />
-      <Deletecar />
+    <BrowserRouter>
+    
+    <Routes>
+
+    <Route path='/' element={<Addcar/>}/>
+    <Route path='/de' element={<Deletecar/>}/>
+    <Route path='/se' element={<Searchcar/>}/>
+    <Route path='/vi' element={<Viewp/>}/>
+
+    </Routes>
+    
+    </BrowserRouter>
     </>
   )
 }
