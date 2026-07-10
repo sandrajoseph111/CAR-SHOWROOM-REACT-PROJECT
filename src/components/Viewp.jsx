@@ -32,6 +32,7 @@ const fetchData =()=>{
             <NavigationBar />
             <div className="container">
                 <div className="row">
+                    <h2>VIEW CARS</h2>
                     <div className="col-12">
 
                         <div className="row g-3">
